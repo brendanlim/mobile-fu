@@ -1,0 +1,41 @@
+commit a3122b40c0c722b2942e9cb5341614d0e0d834a5
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Fri Jul 18 11:14:35 2008 -0400
+
+    Changes to README
+
+commit 64a24e36b6a770757963eb2d961262fb8a14ec1b
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Fri Jul 18 11:10:40 2008 -0400
+
+    Quick fix
+
+commit 116fa5b7c1168471cf56cb9961b98f0b73fc3308
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Fri Jul 18 10:04:41 2008 -0400
+
+    Fixed issue with mobile view session variable getting set incorrectly, when forcing mobile format
+
+commit d172665c9d0458801fd672076e269a3c0ee9d80d
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Fri Jul 18 01:04:19 2008 -0400
+
+    Adding in more MIT license goodness
+
+commit a6c947d684d2d9abdbe354dc1ea757f23cd5a633
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Fri Jul 18 01:00:55 2008 -0400
+
+    Change to the README
+
+commit dad4f4db1f3cb816283069a91c01982c953ff8a5
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Fri Jul 18 01:00:16 2008 -0400
+
+    Change to the README
+
+commit c5ec9de6ef19e48a66917d8f6f3a59771295765b
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Fri Jul 18 00:59:36 2008 -0400
+
+    Releasing Mobile Fu to the world
