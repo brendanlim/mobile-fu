@@ -18,12 +18,12 @@ set as :mobile format.  It is up to you to determine how you want to handle
 these requests.  It is also up to you to create the .mobile.erb versions of
 your views that are to be requested.
 
-I recommend that you setup a before_filter that will redirect to certain page
-depending on whether it is a mobile request or not.  How can you check this?
+I recommend that you setup a before_filter that will redirect to a specific page
+depending on whether or not it is a mobile request.  How can you check this?
 
   is_mobile_device? # => Returns true or false depending on the device
 
-You can also determine which format it is currently in by calling the following:
+You can also determine which format is currently set in by calling the following:
 
   is_mobile_view? # => Returns true or false depending on current req. format
 
