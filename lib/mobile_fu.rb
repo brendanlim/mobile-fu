@@ -28,7 +28,9 @@ module ActionController
     MOBILE_USER_AGENTS =  'palm|palmos|palmsource|iphone|blackberry|nokia|phone|midp|mobi|pda|' +
                           'wap|java|nokia|hand|symbian|chtml|wml|ericsson|lg|audiovox|motorola|' +
                           'samsung|sanyo|sharp|telit|tsm|mobile|mini|windows ce|smartphone|' +
-                          '240x320|320x320|mobileexplorer|j2me|sgh|portable|sprint|vodafone'
+                          '240x320|320x320|mobileexplorer|j2me|sgh|portable|sprint|vodafone|' +
+                          'docomo|kddi|softbank|pdxgw|j-phone|astel|minimo|plucker|netfront|' +
+                          'xiino|mot-v|mot-e|portalmmm|sagem|sie-s|sie-m'
     
     def self.included(base)
       base.extend(ClassMethods)
