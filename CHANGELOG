@@ -1,3 +1,27 @@
+commit ee49945b593b1c55bf546da1d595a0941d071f94
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Fri Aug 22 22:16:00 2008 -0400
+
+    Updating README
+
+commit 02c12a8563466f7cef6aba8e53915dc2efec908c
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Mon Aug 18 16:08:51 2008 -0400
+
+    Adding in support for Android
+
+commit 2dffa5958905c0419288d03a0650127a0734b41a
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Sat Jul 26 14:08:56 2008 -0400
+
+    Adding in other phone user agents, including some Japanese and French manufacturers
+
+commit e8f9f1a9c2e668d639690f4f1beb4f701f742cfa
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Fri Jul 18 11:15:52 2008 -0400
+
+    Adding in CHANGELOG
+
 commit a3122b40c0c722b2942e9cb5341614d0e0d834a5
 Author: Brendan G. Lim <brendan@intridea.com>
 Date:   Fri Jul 18 11:14:35 2008 -0400
