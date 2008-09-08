@@ -1,36 +1,16 @@
-# Copyright (c) 2008 Brendan G. Lim (brendan@intridea.com)
-# 
-# Permission is hereby granted, free of charge, to any person obtaining
-# a copy of this software and associated documentation files (the
-# "Software"), to deal in the Software without restriction, including
-# without limitation the rights to use, copy, modify, merge, publish,
-# distribute, sublicense, and/or sell copies of the Software, and to
-# permit persons to whom the Software is furnished to do so, subject to
-# the following conditions:
-# 
-# The above copyright notice and this permission notice shall be
-# included in all copies or substantial portions of the Software.
-# 
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-# LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-# WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
 module ActionController
   module MobileFu
     
     # These are various strings that can be found in mobile devices.  Please feel free
     # to add on to this list.
     
+    
     MOBILE_USER_AGENTS =  'palm|palmos|palmsource|iphone|blackberry|nokia|phone|midp|mobi|pda|' +
                           'wap|java|nokia|hand|symbian|chtml|wml|ericsson|lg|audiovox|motorola|' +
                           'samsung|sanyo|sharp|telit|tsm|mobile|mini|windows ce|smartphone|' +
                           '240x320|320x320|mobileexplorer|j2me|sgh|portable|sprint|vodafone|' +
                           'docomo|kddi|softbank|pdxgw|j-phone|astel|minimo|plucker|netfront|' +
-                          'xiino|mot-v|mot-e|portalmmm|sagem|sie-s|sie-m|android'
+                          'xiino|mot-v|mot-e|portalmmm|sagem|sie-s|sie-m|android|ipod'
     
     def self.included(base)
       base.extend(ClassMethods)
@@ -60,6 +40,8 @@ module ActionController
         end
 
         helper_method :is_mobile_device?
+        helper_method :is_mobile_view?
+        helper_method :is_device?
       end
       
       def is_mobile_device?
@@ -68,6 +50,10 @@ module ActionController
 
       def in_mobile_view?
         @@in_mobile_view
+      end
+
+      def is_device?(type)
+        @@is_device
       end
     end
     
@@ -102,6 +88,10 @@ module ActionController
       
       def is_mobile_device?
         request.user_agent.to_s.downcase =~ Regexp.new(ActionController::MobileFu::MOBILE_USER_AGENTS)
+      end
+
+      def is_device?(type)
+        request.user_agent.to_s.downcase.include?(type.to_s.downcase)
       end
     end
     
