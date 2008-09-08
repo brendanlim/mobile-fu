@@ -90,6 +90,9 @@ module ActionController
         request.user_agent.to_s.downcase =~ Regexp.new(ActionController::MobileFu::MOBILE_USER_AGENTS)
       end
 
+      # Can check for a specific user agent
+      # e.g., is_device?('iphone') or is_device?('mobileexplorer')
+      
       def is_device?(type)
         request.user_agent.to_s.downcase.include?(type.to_s.downcase)
       end
