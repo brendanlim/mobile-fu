@@ -1,3 +1,15 @@
+commit 1a66ccd2142e387f6d3138acb688a58df4687fcd
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Mon Sep 8 00:05:48 2008 -0400
+
+    Adding in a helper method to check for a specific mobile device and adding in 'ipod' to the list of mobile user agents
+
+commit cbb26fff3287e16a757ee2aed2dcc8e98cbfb369
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Fri Aug 22 22:16:19 2008 -0400
+
+    Updating the CHANGELOG
+
 commit ee49945b593b1c55bf546da1d595a0941d071f94
 Author: Brendan G. Lim <brendan@intridea.com>
 Date:   Fri Aug 22 22:16:00 2008 -0400
