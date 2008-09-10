@@ -1,3 +1,21 @@
+commit 0aac5bd7f0d2f71e6af7b144a04a18dad9f5aca5
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Wed Sep 10 12:50:50 2008 -0400
+
+    Styling overrides for iPods
+
+commit f30c97c794ba74e737856aa9226328469c8395b6
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Mon Sep 8 00:07:27 2008 -0400
+
+    Adding in some comments to the latest changes
+
+commit 78dae861e46d383356d7e4d6dfdaefbf60072e27
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Mon Sep 8 00:06:16 2008 -0400
+
+    Updating README
+
 commit 1a66ccd2142e387f6d3138acb688a58df4687fcd
 Author: Brendan G. Lim <brendan@intridea.com>
 Date:   Mon Sep 8 00:05:48 2008 -0400
