@@ -35,8 +35,8 @@ module MobilizedStyles
         'mobileexplorer'
       elsif ua.index('blackberry') 
         'blackberry'
-      elsif ua.index('iphone') || ua.index('ipod')
-        'iphone'
+      elsif ua.index('iphone') || ua.index('ipod') || ua.index('android')
+        'webkit'
       elsif ua.index('nokia') 
         'nokia'
       elsif ua.index('palm') 

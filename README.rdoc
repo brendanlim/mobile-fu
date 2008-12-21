@@ -55,7 +55,7 @@ is making the request.
 Supported stylesheet override device extensions at the moment are:
 
   blackberry
-  iphone
+  webkit (android,iphone,ipod)
   mobileexplorer
   nokia
   palm
