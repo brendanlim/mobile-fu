@@ -1,3 +1,21 @@
+commit a46e0d5ff0a95407bbd8f3437a372ced53d90c9b
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Sat Dec 20 20:59:49 2008 -0500
+
+    Added a helper method to determine if a device is JavaScript enabled and one to output the XHTML Mobile 1.0 doctype
+
+commit f4b29b2e2c68a79b8904dddb7a91efd4341540ee
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Sun Sep 21 21:39:10 2008 -0400
+
+    Fixes issue with 'in_mobile_view' instead of 'is_mobile_view' helper method
+
+commit 29e8e8b407dd3dc8d5f3248183223d11c6a78843
+Author: Brendan G. Lim <brendan@intridea.com>
+Date:   Wed Sep 10 12:51:12 2008 -0400
+
+    Updating CHANGELOG
+
 commit 0aac5bd7f0d2f71e6af7b144a04a18dad9f5aca5
 Author: Brendan G. Lim <brendan@intridea.com>
 Date:   Wed Sep 10 12:50:50 2008 -0400
