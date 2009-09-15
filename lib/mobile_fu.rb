@@ -10,7 +10,7 @@ module ActionController
                           'samsung|sanyo|sharp|telit|tsm|mobile|mini|windows ce|smartphone|' +
                           '240x320|320x320|mobileexplorer|j2me|sgh|portable|sprint|vodafone|' +
                           'docomo|kddi|softbank|pdxgw|j-phone|astel|minimo|plucker|netfront|' +
-                          'xiino|mot-v|mot-e|portalmmm|sagem|sie-s|sie-m|android|ipod|pre'
+                          'xiino|mot-v|mot-e|portalmmm|sagem|sie-s|sie-m|android|ipod'
     
     def self.included(base)
       base.extend(ClassMethods)
