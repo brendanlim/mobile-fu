@@ -37,6 +37,8 @@ module MobilizedStyles
         'blackberry'
       elsif ua.index('iphone') || ua.index('ipod')
         'iphone'
+      elsif ua.index('ipad')
+        'ipad'
       elsif ua.index('android')
         'android'
       elsif ua.index('nokia') 
