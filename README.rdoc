@@ -2,8 +2,8 @@
 
 Want to automatically detect mobile devices that access your Rails application?  
 Mobile Fu allows you to do just that.  People can access your site from a Palm,
-Blackberry, iPhone, Nokia, etc. and it will automatically adjust the format of
-the request from :html to :mobile.  
+Blackberry, iPhone, iPad, Nokia, etc. and it will automatically adjust the format
+of the request from :html to :mobile.  
 
 == Usage
 
@@ -56,6 +56,7 @@ Supported stylesheet override device extensions at the moment are:
 
   blackberry
   iphone (iphone,ipod)
+  ipad
   android
   mobileexplorer
   nokia
