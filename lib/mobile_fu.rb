@@ -59,8 +59,10 @@ module ActionController
       # Forces the request format to be :mobile
       
       def force_mobile_format
-        request.format = :mobile
-        session[:mobile_view] = true if session[:mobile_view].nil?
+        if !request.xhr?
+          request.format = :mobile
+          session[:mobile_view] = true if session[:mobile_view].nil?
+        end
       end
       
       # Determines the request format based on whether the device is mobile or if
