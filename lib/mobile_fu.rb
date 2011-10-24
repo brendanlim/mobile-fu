@@ -36,7 +36,7 @@ module ActionController
       def has_mobile_fu(options = {})
         include ActionController::MobileFu::InstanceMethods
 
-        if options.responds_to?(:delete) && options.delete( :test_mode )
+        if options.respond_to?(:delete) && options.delete( :test_mode )
           before_filter :force_mobile_format
         else
           before_filter :set_mobile_format
