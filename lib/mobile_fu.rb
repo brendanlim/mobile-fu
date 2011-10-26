@@ -37,9 +37,9 @@ module ActionController
         include ActionController::MobileFu::InstanceMethods
 
         if options.respond_to?(:delete) && options.delete( :test_mode ) || options === true
-          before_filter :force_mobile_format
+          before_filter :force_mobile_format, options
         else
-          before_filter :set_mobile_format
+          before_filter :set_mobile_format, options
         end
 
         helper_method :is_mobile_device?
