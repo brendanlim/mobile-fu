@@ -21,19 +21,25 @@ module ActionController
       #      has_mobile_fu
       #    end
       #
-      # You can also force mobile mode by passing in 'true'
+      # You can also pass any of the options available to before_filter (:only, :exclude)
+      #
+      #    class WelcomeController < ActionController::Base 
+      #      has_mobile_fu :only => :index
+      #    end
+      #
+      # You can also force mobile mode by passing in 'true' or :test_mode => true
       #
       #    class ApplicationController < ActionController::Base 
       #      has_mobile_fu(true)
       #    end
         
-      def has_mobile_fu(test_mode = false)
+      def has_mobile_fu(options = {})
         include ActionController::MobileFu::InstanceMethods
 
-        if test_mode 
-          before_filter :force_mobile_format
+        if options.respond_to?(:delete) && options.delete( :test_mode ) || options === true
+          before_filter :force_mobile_format, options
         else
-          before_filter :set_mobile_format
+          before_filter :set_mobile_format, options
         end
 
         helper_method :is_mobile_device?
