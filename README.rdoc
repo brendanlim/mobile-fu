@@ -45,7 +45,7 @@ depending on whether or not it is a mobile request.  How can you check this?
 
 You can also determine which format is currently set in by calling the following:
 
-  is_mobile_view? # => Returns true or false depending on current req. format
+  in_mobile_view? # => Returns true or false depending on current req. format
 
 Also, if you want the ability to allow a user to switch between 'mobile' and
 'standard' format (:html), you can just adjust the mobile_view session variable
